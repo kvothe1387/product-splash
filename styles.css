@@ -74,3 +74,14 @@ p {
 /* =================
     Media queries 
    ================= */
+
+@media (min-width: 576px) {
+  body {
+    display: flex;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+}
