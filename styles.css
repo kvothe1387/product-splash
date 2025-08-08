@@ -39,6 +39,17 @@ h1 {
     Main content
    ==================== */
 
+.main-content {
+  padding: 2.5em 2em 0 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-main {
+  width: 120px;
+  border-radius: 50%;
+}
 
 /* =================
     Form
