@@ -36,6 +36,12 @@ p {
   text-transform: uppercase;
 }
 
+.fine-print {
+  font-size: .75rem;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
 /* =================
     Intro
    ================= */
@@ -72,6 +78,12 @@ p {
     Form
    ================= */
 
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: .75em;
+  padding: .5em;
+}
 
 /* =================
     Media queries 
