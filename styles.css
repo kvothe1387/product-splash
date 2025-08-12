@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #404040;
@@ -26,14 +32,27 @@ p {
 
 .beta-text {
   font-weight: 900;
-  text-transform: uppercase;
 }
 
 .subheading {
   color: #575757;
   font-weight: 900;
   margin-bottom: .5em;
+}
+
+.beta-text,
+.top-text,
+.subheading {
   text-transform: uppercase;
+}
+
+.top-text {
+  font-size: .875rem;
+  font-weight: 900;
+  padding-top: .25em;
+  border-top: 5px solid;
+  order: -1;
+  margin: 0 auto;
 }
 
 .fine-print {
@@ -43,19 +62,30 @@ p {
 }
 
 /* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* =================
     Intro
    ================= */
 
 .intro {
   color: #fff;
   background-color: #9480e4;
-  display: flex;
-  flex-direction: column;
   min-height: 250px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   background-image: url('./images/intro-bg.png');
   background-size: cover;
+  padding-bottom: 1.5em;
 }
 
 /* ====================
@@ -63,15 +93,18 @@ p {
    ==================== */
 
 .main-content {
-  padding: 2.5em 2em 0 2em;
-  display: flex;
+  padding-top: 2.5em;
   align-items: center;
-  flex-direction: column;
 }
 
 .img-main {
   width: 120px;
   border-radius: 50%;
+}
+
+.main-content p,
+form {
+  max-width: 450px;
 }
 
 /* =================
